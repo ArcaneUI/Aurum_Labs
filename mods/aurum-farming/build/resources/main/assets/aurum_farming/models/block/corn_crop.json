@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "aurum_farming:block/corn_crop"
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [{"item": "minecraft:paper"}, {"item": "minecraft:clock"}],
+  "result": {"id": "aurum_seasons:season_calendar", "count": 1}
+}

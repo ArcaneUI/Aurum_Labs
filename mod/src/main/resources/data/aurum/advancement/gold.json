@@ -1,0 +1,30 @@
+{
+  "parent": "aurum:silver",
+  "display": {
+    "icon": {
+      "id": "aurum:gold_coin"
+    },
+    "title": {
+      "translate": "advancement.aurum.gold.title"
+    },
+    "description": {
+      "translate": "advancement.aurum.gold.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "has_item": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "aurum:gold_coin"
+          }
+        ]
+      }
+    }
+  }
+}

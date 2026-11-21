@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "aurum_farming:block/rice_crop"
+    }
+  }
+}

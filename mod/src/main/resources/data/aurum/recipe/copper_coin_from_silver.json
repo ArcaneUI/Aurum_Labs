@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "aurum:silver_coin"
+    }
+  ],
+  "result": {
+    "id": "aurum:copper_coin",
+    "count": 9
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "parent": "aurum:root",
+  "display": {
+    "icon": {
+      "id": "aurum:wallet"
+    },
+    "title": {
+      "translate": "advancement.aurum.wallet.title"
+    },
+    "description": {
+      "translate": "advancement.aurum.wallet.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "has_item": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "aurum:wallet"
+          }
+        ]
+      }
+    }
+  }
+}

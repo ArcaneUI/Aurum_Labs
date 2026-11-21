@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "aurum",
+  "version": "${version}",
+  "name": "Aurum: Economy",
+  "description": "Полноценная экономика для Minecraft: медные, серебряные и золотые монеты, банкноты, кошелёк, Монетный двор, профессия Банкира — и жители, которые принимают деньги вместо изумрудов. Анимированные монеты, всплывающий баланс и фонтан из монет.",
+  "authors": [
+    "Aurum Team"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/"
+  },
+  "license": "MIT",
+  "icon": "assets/aurum/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "dev.aurum.economy.AurumMod"
+    ],
+    "client": [
+      "dev.aurum.economy.client.AurumClient"
+    ]
+  },
+  "mixins": [
+    "aurum.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["DDD", "DBD", "DDD"],
+  "key": {"D": {"item": "minecraft:diamond"}, "B": {"item": "aurum_backpacks:gold_backpack"}},
+  "result": {"id": "aurum_backpacks:diamond_backpack", "count": 1}
+}

@@ -1,0 +1,30 @@
+{
+  "parent": "aurum:silver",
+  "display": {
+    "icon": {
+      "id": "aurum:mint"
+    },
+    "title": {
+      "translate": "advancement.aurum.mint.title"
+    },
+    "description": {
+      "translate": "advancement.aurum.mint.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "has_item": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "aurum:mint"
+          }
+        ]
+      }
+    }
+  }
+}

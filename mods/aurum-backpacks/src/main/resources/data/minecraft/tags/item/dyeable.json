@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "aurum_backpacks:leather_backpack",
+    "aurum_backpacks:iron_backpack",
+    "aurum_backpacks:gold_backpack",
+    "aurum_backpacks:diamond_backpack",
+    "aurum_backpacks:netherite_backpack"
+  ]
+}

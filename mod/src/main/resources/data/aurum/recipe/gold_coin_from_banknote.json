@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "aurum:banknote"
+    }
+  ],
+  "result": {
+    "id": "aurum:gold_coin",
+    "count": 9
+  }
+}

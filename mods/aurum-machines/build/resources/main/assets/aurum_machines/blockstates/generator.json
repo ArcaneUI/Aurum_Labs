@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "lit=false": {
+      "model": "aurum_machines:block/generator"
+    },
+    "lit=true": {
+      "model": "aurum_machines:block/generator"
+    }
+  }
+}

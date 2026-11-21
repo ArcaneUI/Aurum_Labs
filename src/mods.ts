@@ -1,0 +1,240 @@
+import type { ModIconId } from "./components/BrandSystem";
+
+export type ModStatus = "released" | "beta" | "soon";
+
+export interface ModDef {
+  id: string;
+  name: string;
+  tagline: string;
+  tagline_en: string;
+  description: string;
+  description_en: string;
+  version: string;
+  mc: string;
+  loader: string;
+  status: ModStatus;
+  color: string;
+  gradient: string;
+  icon: ModIconId;
+  features: string[];
+  features_en: string[];
+  tags: string[];
+  tags_en: string[];
+}
+
+export const MODS: ModDef[] = [
+  {
+    id: "aurum-economy",
+    name: "Aurum: Economy",
+    tagline: "Полноценная экономика вместо изумрудов",
+    tagline_en: "Full economy system instead of emeralds",
+    description: "Новая валюта для Minecraft: монеты, банкноты, кошелёк, Монетный двор, Банкир и полноценная замена изумрудной торговли у жителей. Основа для всей экосистемы Aurum Labs.",
+    description_en: "A new currency for Minecraft: coins, banknotes, wallets, the Mint, the Banker, and a full replacement for emerald villager trading. The core of the Aurum Labs ecosystem.",
+    version: "1.1.0",
+    mc: "1.21.1",
+    loader: "Fabric",
+    status: "released",
+    color: "#f6c618",
+    gradient: "from-amber-500/24 via-yellow-600/12 to-transparent",
+    icon: "economy",
+    features: [
+      "4 номинала: медь, серебро, золото, банкнота (×9 каждый)",
+      "Кошелёк на 1 000 000 AU с быстрым внесением и снятием",
+      "Монетный двор: чеканка из слитков и редких ресурсов",
+      "Профессия «Банкир» за Банковской стойкой",
+      "Витрина монет с парящим предметом",
+      "Дроп монет с монстров, рейдеров и боссов",
+      "Анимированный HUD баланса (клавиша B — авто/скрыт/закреплён)",
+      "Анимация подбрасывания монеты с кулдауном и частицами",
+      "7 достижений · 10 рецептов",
+    ],
+    features_en: [
+      "4 denominations: copper, silver, gold, banknote (×9 each)",
+      "Wallet for up to 1,000,000 AU with quick deposit/withdraw",
+      "The Mint: strike coins from ingots and rare resources",
+      "Banker profession with the Teller Desk",
+      "Coin Pedestal with floating items",
+      "Coin drops from monsters, raiders, and bosses",
+      "Animated balance HUD (B key to toggle auto/hidden/pinned)",
+      "Coin flip animation with cooldown and particles",
+      "7 advancements · 10 recipes",
+    ],
+    tags: ["Экономика", "Торговля", "Жители"],
+    tags_en: ["Economy", "Trading", "Villagers"],
+  },
+  {
+    id: "aurum-seasons",
+    name: "Aurum: Seasons",
+    tagline: "Четыре сезона меняют мир",
+    tagline_en: "Four seasons transform the world",
+    description: "Сезонная система с плавными переходами, температурой, погодными эффектами и влиянием на растительность, урожай и спавн мобов. Мир живёт и визуально меняется по кругу года.",
+    description_en: "A seasonal system with smooth transitions, temperature, weather effects, and impact on vegetation, crops, and mob spawns. The world lives and changes visually throughout the year.",
+    version: "1.1.0",
+    mc: "1.21.1",
+    loader: "Fabric",
+    status: "released",
+    color: "#4ade80",
+    gradient: "from-emerald-500/22 via-green-600/10 to-transparent",
+    icon: "seasons",
+    features: [
+      "4 сезона с плавными переходами (7 дней на сезон)",
+      "Смена оттенков травы и листвы в реальном времени",
+      "Сетевая синхронизация сезонов между сервером и клиентом",
+      "Сезонный календарь (показывает дни и температуру)",
+      "Частицы в воздухе: цветение, пыльца, листопад, снег",
+      "Ускорение роста урожая летом, цветы весной",
+      "Снегопады в тёплых биомах зимой",
+    ],
+    features_en: [
+      "4 seasons with smooth transitions (7 days per season)",
+      "Real-time grass and foliage color changes",
+      "Network synchronization of seasons between server and client",
+      "Season Calendar (shows days and temperature)",
+      "Airborne particles: cherry blossoms, pollen, falling leaves, snow",
+      "Accelerated crop growth in summer, flowers in spring",
+      "Snowfalls in warm biomes during winter",
+    ],
+    tags: ["Мир", "Биомы", "Погода"],
+    tags_en: ["World", "Biomes", "Weather"],
+  },
+  {
+    id: "aurum-backpacks",
+    name: "Aurum: Backpacks",
+    tagline: "Рюкзаки, сумки и хранилища",
+    tagline_en: "Backpacks, bags, and storage",
+    description: "Прогрессия рюкзаков от ранней игры до эндгейма: больше слотов, покраска, визуальный рендер на персонаже, быстрый доступ и автоподбор ресурсов в походах и шахтах.",
+    description_en: "Backpack progression from early game to endgame: more slots, dyeing, visual rendering on the character, quick access, and auto-pickup for resources during adventures.",
+    version: "1.1.0",
+    mc: "1.21.1",
+    loader: "Fabric",
+    status: "released",
+    color: "#f97316",
+    gradient: "from-orange-500/20 via-orange-600/10 to-transparent",
+    icon: "backpacks",
+    features: [
+      "5 уровней: кожа → железо → золото → алмаз → незерит",
+      "Вместимость от 9 до 45 слотов",
+      "Окрашивание на верстаке в 16 цветов",
+      "Открытие по горячей клавише [V] из любого слота",
+      "3D-рендер рюкзака на спине игрока",
+      "Сохранение данных рюкзака через Components",
+      "Автоподбор предметов с земли (Shift + ПКМ)",
+    ],
+    features_en: [
+      "5 tiers: leather → iron → gold → diamond → netherite",
+      "Capacity from 9 to 45 slots",
+      "Dyeable in 16 colors in crafting table",
+      "Open via hotkey [V] from any slot",
+      "3D backpack rendering on player's back",
+      "Backpack data saved via Components",
+      "Auto-pickup items from the ground (Shift + RMB)",
+    ],
+    tags: ["Хранение", "Броня", "Удобство"],
+    tags_en: ["Storage", "Armor", "Utility"],
+  },
+  {
+    id: "aurum-farming",
+    name: "Aurum: Farming",
+    tagline: "Глубокое фермерство и кухни",
+    tagline_en: "Deep farming and kitchens",
+    description: "Сельское хозяйство нового уровня: десятки культур, фермерские станции, почвы, удобрения, кухни и производственные цепочки еды для серверных экономик.",
+    description_en: "Next-level agriculture: dozens of crops, farming stations, soils, fertilizers, kitchens, and food production chains for server economies.",
+    version: "1.1.0",
+    mc: "1.21.1",
+    loader: "Fabric",
+    status: "released",
+    color: "#84cc16",
+    gradient: "from-lime-500/20 via-green-600/10 to-transparent",
+    icon: "farming",
+    features: [
+      "5 новых культур: томат, кукуруза, клубника, лук, рис",
+      "Интерактивный кухонный стол для готовки блюд",
+      "5 новых блюд: томатный суп, кукуруза, тарт, кольца, паэлья",
+      "Удобрение для мгновенного ускорения роста",
+      "Контракт на поставку еды (обмен урожая на монеты)",
+      "Интеграция с Aurum: Economy",
+    ],
+    features_en: [
+      "5 new crops: tomato, corn, strawberry, onion, rice",
+      "Interactive kitchen table for cooking meals",
+      "5 new dishes: tomato soup, roasted corn, tart, rings, paella",
+      "Fertilizer for instant growth acceleration",
+      "Delivery contract (exchange crops for coins)",
+      "Integration with Aurum: Economy",
+    ],
+    tags: ["Ферма", "Еда", "Экономика"],
+    tags_en: ["Farming", "Food", "Economy"],
+  },
+  {
+    id: "aurum-oceans",
+    name: "Aurum: Oceans",
+    tagline: "Моря, корабли и портовые города",
+    tagline_en: "Seas, ships, and port cities",
+    description: "Переосмысление океанов: суда, причалы, новые структуры, торговые маршруты, рыбацкие механики и морские опасности. Идея для приключений и выживания у воды.",
+    description_en: "Ocean overhaul: vessels, docks, new structures, trade routes, fishing mechanics, and maritime dangers. Perfect for water-based adventures and survival.",
+    version: "1.1.0",
+    mc: "1.21.1",
+    loader: "Fabric",
+    status: "released",
+    color: "#38bdf8",
+    gradient: "from-sky-400/20 via-cyan-600/10 to-transparent",
+    icon: "oceans",
+    features: [
+      "Рыбацкая сеть: добыча рыбы, крабов и ракушек из воды",
+      "Затонувший сундук с жемчугом и монетами",
+      "Морской жемчуг и редкий чёрный жемчуг в луте кораблей",
+      "Амулет из жемчуга: подводное дыхание и грация дельфина",
+      "Коралловые лампы, доски причала и блоки ракушек",
+      "Жареный краб для восполнения сытости",
+    ],
+    features_en: [
+      "Fishing net: catch fish, crabs, and shells from water",
+      "Sunken chest with pearls and coins",
+      "Sea pearls and rare black pearls in shipwreck loot",
+      "Pearl amulet: water breathing and dolphin's grace",
+      "Coral lamps, dock planks, and barnacle blocks",
+      "Cooked crab for high saturation",
+    ],
+    tags: ["Океан", "Исследование", "Структуры"],
+    tags_en: ["Ocean", "Exploration", "Structures"],
+  },
+  {
+    id: "aurum-machines",
+    name: "Aurum: Machines",
+    tagline: "Лёгкая индустриальная автоматизация",
+    tagline_en: "Lightweight industrial automation",
+    description: "Не перегруженный техномод: конвейеры, прессы, дробилки, сортировка, трубы и питание машин. Всё в стиле Minecraft, без лишней сложности ради сложности.",
+    description_en: "A streamlined tech mod: conveyors, presses, crushers, sorting, pipes, and machine power. All in a Minecraft-friendly style, without unnecessary complexity.",
+    version: "1.1.0",
+    mc: "1.21.1",
+    loader: "Fabric",
+    status: "released",
+    color: "#94a3b8",
+    gradient: "from-slate-400/18 via-slate-600/8 to-transparent",
+    icon: "machines",
+    features: [
+      "Конвейеры, плавно перемещающие предметы и мобов",
+      "Дробилка: перемалывает руды в двойную пыль, кости в муку",
+      "Пресс: штампует пластины из слитков металлов",
+      "Сортировщик: разделяет ресурсы и обычные предметы",
+      "Генератор на угле со свечением и частицами пламени",
+      "Новые компоненты: моторы, схемы, медные провода",
+    ],
+    features_en: [
+      "Conveyors that smoothly move items and mobs",
+      "Crusher: grinds ores into double dust, bones into meal",
+      "Press: stamps plates from metal ingots",
+      "Sorter: separates resources from regular items",
+      "Coal generator with lighting and flame particles",
+      "New components: motors, circuits, copper wires",
+    ],
+    tags: ["Техника", "Автоматизация", "Логистика"],
+    tags_en: ["Tech", "Automation", "Logistics"],
+  },
+];
+
+export const STATUS_LABELS: Record<ModStatus, { label: string; label_en: string; color: string; bg: string }> = {
+  released: { label: "Выпущен", label_en: "Released", color: "text-emerald-400", bg: "bg-emerald-500/15 border-emerald-500/30" },
+  beta: { label: "Бета", label_en: "Beta", color: "text-amber-400", bg: "bg-amber-500/15 border-amber-500/30" },
+  soon: { label: "Скоро", label_en: "Soon", color: "text-violet-400", bg: "bg-violet-500/15 border-violet-500/30" },
+};

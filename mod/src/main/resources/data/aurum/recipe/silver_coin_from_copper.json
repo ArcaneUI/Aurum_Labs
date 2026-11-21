@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "CCC",
+    "CCC",
+    "CCC"
+  ],
+  "key": {
+    "C": {
+      "item": "aurum:copper_coin"
+    }
+  },
+  "result": {
+    "id": "aurum:silver_coin",
+    "count": 1
+  }
+}
